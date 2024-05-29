@@ -51,5 +51,5 @@ Because .NET Framework based ASP.NET application employs a `SynchronizationConte
 
 Because .NET Core does not employ `SynchronizationContext` to manage threading, it is not suseptable to the deadlock problem.
 
-However, using `Task.Result` or `Task.Wait` in a synchronous block such as a constructor, method, Action, or Func produces a phenomenon called "Sync of async" - the need to use 2 threads instead of 1 to complete synchronous operations.
+However, using `Task.Result` or `Task.Wait` in a synchronous block such as a constructor, method, Action, or Func produces a phenomenon called "Sync on async" - the need to use 2 threads instead of 1 to complete synchronous operations.
 

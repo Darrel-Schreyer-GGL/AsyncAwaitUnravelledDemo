@@ -20,11 +20,11 @@ public partial class MainWindow : Window
         StatusText.Text = "Running...";
 
         #region Bad #1
-        //LongRunningOperation().Wait();
+        LongRunningOperation().Wait();
         #endregion
 
         #region Bad #2
-        int result = LongRunningGetOperation().Result;
+        //int result = LongRunningGetOperation().Result;
         #endregion
 
         #region Bad #3
