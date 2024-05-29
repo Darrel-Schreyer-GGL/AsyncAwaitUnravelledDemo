@@ -1,0 +1,6 @@
+@AsyncAwaitUnravelled.AspNetCoreApp_HostAddress = http://localhost:5123
+
+GET {{AsyncAwaitUnravelled.AspNetCoreApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
